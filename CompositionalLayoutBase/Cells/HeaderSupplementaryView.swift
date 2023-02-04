@@ -23,7 +23,6 @@ class HeaderSupplementaryView: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        translatesAutoresizingMaskIntoConstraints = false
         setupView()
         setupConstraints()
     }

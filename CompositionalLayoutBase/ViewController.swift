@@ -25,9 +25,7 @@ class ViewController: UIViewController {
         button.setTitle("Make Order", for: .normal)
         button.titleLabel?.font = UIFont(name: "Helvetica", size: 18)
         button.tintColor = .white
-        button.layer.cornerRadius = 10
-//        button.clipsToBounds = true
-        
+        button.layer.cornerRadius = 10        
         return button
     }()
     

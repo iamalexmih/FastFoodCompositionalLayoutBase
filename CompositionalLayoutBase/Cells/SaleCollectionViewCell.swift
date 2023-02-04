@@ -19,7 +19,6 @@ class SaleCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        translatesAutoresizingMaskIntoConstraints = false
         
         setupView()
         setupConstraints()
@@ -27,7 +26,7 @@ class SaleCollectionViewCell: UICollectionViewCell {
     
     
     private func setupView() {
-        addSubview(saleImageView)
+        contentView.addSubview(saleImageView)
         backgroundColor = .white
         clipsToBounds = true
         layer.cornerRadius = 10
@@ -38,8 +37,6 @@ class SaleCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupConstraints() {
-        // проверить работает ли frame = bounds
-//        saleImageView.frame = bounds
         NSLayoutConstraint.activate([
             saleImageView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
             saleImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),

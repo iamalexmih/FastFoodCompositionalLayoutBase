@@ -49,8 +49,7 @@ class ExampleCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        translatesAutoresizingMaskIntoConstraints = false
-        
+    
         setupView()
         setupConstraints()
     }
@@ -71,8 +70,6 @@ class ExampleCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupConstraints() {
-        // проверить работает ли frame = bounds
-//        saleImageView.frame = bounds
         NSLayoutConstraint.activate([
             burgerImageView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
             burgerImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),

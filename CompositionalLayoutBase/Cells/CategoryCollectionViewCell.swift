@@ -43,7 +43,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        translatesAutoresizingMaskIntoConstraints = false
         
         setupView()
         setupConstraints()
@@ -63,8 +62,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     }
     
     private func setupConstraints() {
-        // проверить работает ли frame = bounds
-//        saleImageView.frame = bounds
         NSLayoutConstraint.activate([
             categoryLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5),
             categoryLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5),
